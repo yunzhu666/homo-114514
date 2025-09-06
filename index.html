@@ -1,42 +1,229 @@
-<html>
-  <body>
-    <head>
-      <meta charset="utf-8">
-      <title>HomoのWebsite</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    </head>
-    <body>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="homo.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            HomoのWebsite! -- 114514.fan
-          </a>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>HomoのWebsite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --apple-primary: #0071e3;
+            --apple-light-bg: #f5f5f7;
+            --apple-dark-bg: #121212;
+            --apple-card-bg: #ffffff;
+            --apple-text-primary: #1d1d1f;
+            --apple-text-secondary: #86868b;
+            --apple-border-radius: 12px;
+            --apple-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --apple-light-bg: #000000;
+                --apple-card-bg: #1d1d1f;
+                --apple-text-primary: #f5f5f7;
+                --apple-text-secondary: #a1a1a6;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--apple-light-bg);
+            color: var(--apple-text-primary);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        .apple-navbar {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 12px 0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .apple-navbar {
+                background-color: rgba(0, 0, 0, 0.8);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        .apple-container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        .apple-card {
+            background-color: var(--apple-card-bg);
+            border-radius: var(--apple-border-radius);
+            box-shadow: var(--apple-shadow);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .apple-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .apple-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--apple-primary);
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 980px;
+            font-weight: 500;
+            margin: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .apple-button:hover {
+            background-color: #0077ed;
+            transform: scale(1.05);
+            color: white;
+        }
+
+        .apple-img {
+            border-radius: var(--apple-border-radius);
+            overflow: hidden;
+            transition: transform 0.5s ease;
+            margin: 15px;
+        }
+
+        .apple-img:hover {
+            transform: scale(1.03);
+        }
+
+        .caption {
+            color: var(--apple-text-secondary);
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            font-weight: 600;
+            margin: 40px 0 20px;
+            text-align: center;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--apple-text-secondary);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="apple-navbar sticky-top">
+        <div class="apple-container">
+            <div class="d-flex align-items-center">
+                <img src="homo.jpeg" alt="Logo" width="30" height="30" class="me-2" style="border-radius: 5px;">
+                <span class="fw-semibold">HomoのWebsite! — 114514.fan</span>
+                <div class="ms-auto">
+                    <i class="bi bi-sun-fill theme-toggle" role="button"></i>
+                </div>
+            </div>
         </div>
-      </nav>
-      <figure class="figure mx-auto d-block text-center" style="margin-top: 50px;">
-        <figcaption class="figure-caption">Homo无处不在</figcaption>
-        <img src="homo.jpeg" class="figure-img img-fluid rounded " width="300" height="300" alt="114514">
-        <img src="youya.jpeg" class="figure-img img-fluid rounded" width="300" height="300" alt="114514">
-        </br></br>
-        <link rel="stylesheet" type="text/css" href="css/button.css">
-        <a class="button" href="https://cloudery.cn">云术团队</a>
-        <a class="button" href="https://lkdns.org">免费获得本域名</a>
-        <a class="button" href="https://github.com/ABCDCreeper/homo-114514.xyz">Github源码</a>
-      
-      </br></br>
-      <figcaption class="figure-caption">音乐欣赏</figcaption>
-      </figure>
-      <figure class="figure mx-auto d-block text-center">
-        <figure class="figure mx-auto ">
-      </figure>
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1896116362&auto=1&height=66"></iframe>
-      
-      </br></br>
-      <figcaption class="figure-caption">关于这个梗</figcaption>
-      <iframe src="//player.bilibili.com/player.html?aid=481619569&bvid=BV1ZT411D7Zw&cid=998077055&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-  </body>
+    </nav>
 
+    <main class="apple-container">
+        <section class="text-center" style="padding: 60px 0 30px;">
+            <h1 style="font-size: 3em; font-weight: 700; margin-bottom: 20px;">Homo无处不在</h1>
+            <p class="caption" style="font-size: 1.2em;">探索网络文化的奇妙之处</p>
+        </section>
 
+        <div class="media-container">
+            <div class="apple-img">
+                <img src="homo.jpeg" class="img-fluid" width="300" alt="114514" style="border-radius: var(--apple-border-radius);">
+            </div>
+            <div class="apple-img">
+                <img src="youya.jpeg" class="img-fluid" width="300" alt="114514" style="border-radius: var(--apple-border-radius);">
+            </div>
+        </div>
+
+        <div class="text-center" style="margin: 40px 0;">
+            <a href="https://cldery.com" class="apple-button">
+                <i class="bi bi-cloud me-2"></i> 云术工作室
+            </a>
+            <a href="https://lkdns.org" class="apple-button">
+                <i class="bi bi-globe me-2"></i> 免费获得本域名
+            </a>
+            <a href="https://github.com/ABCDCreeper/homo-114514.xyz" class="apple-button">
+                <i class="bi bi-github me-2"></i> Github源码
+            </a>
+        </div>
+
+        <h2 class="section-title">音乐欣赏</h2>
+        <div class="apple-card text-center">
+            <div class="media-container">
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1896116362&auto=1&height=66"></iframe>
+            </div>
+        </div>
+
+        <h2 class="section-title">关于这个梗</h2>
+        <div class="apple-card">
+            <div class="media-container">
+                <iframe src="//player.bilibili.com/player.html?aid=481619569&bvid=BV1ZT411D7Zw&cid=998077055&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="400"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="apple-container">
+            <p>© 2023 HomoのWebsite. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的明暗模式切换
+        document.querySelector('.theme-toggle').addEventListener('click', function() {
+            if (document.body.getAttribute('data-theme') === 'dark') {
+                document.body.removeAttribute('data-theme');
+                this.classList.remove('bi-moon-fill');
+                this.classList.add('bi-sun-fill');
+            } else {
+                document.body.setAttribute('data-theme', 'dark');
+                this.classList.remove('bi-sun-fill');
+                this.classList.add('bi-moon-fill');
+            }
+        });
+
+        // 检测系统偏好
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.setAttribute('data-theme', 'dark');
+            document.querySelector('.theme-toggle').classList.remove('bi-sun-fill');
+            document.querySelector('.theme-toggle').classList.add('bi-moon-fill');
+        }
+
+        // 监听系统主题变化
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (e.matches) {
+                document.body.setAttribute('data-theme', 'dark');
+                document.querySelector('.theme-toggle').classList.remove('bi-sun-fill');
+                document.querySelector('.theme-toggle').classList.add('bi-moon-fill');
+            } else {
+                document.body.removeAttribute('data-theme');
+                document.querySelector('.theme-toggle').classList.remove('bi-moon-fill');
+                document.querySelector('.theme-toggle').classList.add('bi-sun-fill');
+            }
+        });
+    </script>
+</body>
 </html>
